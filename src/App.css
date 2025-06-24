@@ -1,0 +1,307 @@
+/* Clean, stark styling with consistent branding */
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Classes */
+.font-gotham {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Heading Styles */
+h1, .h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+h2, .h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #000000;
+}
+
+h3, .h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #000000;
+}
+
+h4, .h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* Body Text */
+p, .body {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+}
+
+/* Caption/Small Text */
+.caption, .text-caption {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Button Styles - Clean and stark */
+.btn-primary {
+  background-color: #8B0000;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #660000;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #DAA520;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #B8860B;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Section Spacing */
+.section-padding {
+  padding: 5rem 0;
+}
+
+/* Image Styles */
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Clean scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B0000;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #660000;
+}
+
+/* Navigation Styles */
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #8B0000;
+}
+
+.nav-link.active {
+  color: #8B0000;
+  font-weight: 600;
+}
+
+/* Form Styles */
+.form-input {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #d4d4d4;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #8B0000;
+  box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+}
+
+/* Podcast Player Styles */
+.podcast-player {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Clean animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clean, minimal loading spinner */
+.loading-spinner {
+  border: 2px solid #e5e5e5;
+  border-top: 2px solid #8B0000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Modal styles */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+/* Clean table styles */
+.table {
+  font-family: 'Poppins', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.table td {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Accent colors used sparingly */
+.text-accent-red {
+  color: #8B0000;
+}
+
+.text-accent-gold {
+  color: #DAA520;
+}
+
+.bg-accent-red {
+  background-color: #8B0000;
+}
+
+.bg-accent-gold {
+  background-color: #DAA520;
+}
+
+/* Clean utility classes */
+.border-accent-red {
+  border-color: #8B0000;
+}
+
+.border-accent-gold {
+  border-color: #DAA520;
+}
+
+/* Remove all gradients and keep colors solid */
+.no-gradients {
+  background-image: none !important;
+}
+
+/* Stark, clean section dividers */
+.section-divider {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 3rem 0;
+}
